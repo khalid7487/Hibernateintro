@@ -34,7 +34,8 @@ public class Main {
         Emp_Info empinfo=(Emp_Info)session.get(Emp_Info.class, 1);
         System.out.println(empinfo.getEmp_name());
         empinfo.setEmp_name("khalid new");
-        session.update(empinfo);
+//        session.update(empinfo);
+        session.delete(empinfo);
         session.getTransaction().commit();
         session.close();
         sessionFact.close();
