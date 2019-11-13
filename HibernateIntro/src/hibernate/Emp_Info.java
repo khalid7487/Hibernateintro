@@ -1,8 +1,14 @@
 
 package hibernate;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="employee_info")
 public class Emp_Info {
+    @Id
     private  int emp_id;
     private String emp_name;
 
